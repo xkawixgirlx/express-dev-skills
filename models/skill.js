@@ -6,7 +6,13 @@ const skills = [{id: 145262, learned: 'javascript', done: true},
 
 module.exports = {
     getAll,
+    getOne,
 };
+
+function getOne(id) {
+   id = parseInt(id);
+   return skills.find((skill) => skill.id === id); 
+}
 
 function getAll() {
     return skills;
