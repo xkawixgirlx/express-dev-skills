@@ -1,1 +1,11 @@
 <%- include('../views/index.ejs') %>
+<body>
+    <h1>Skills Learned</h1>
+    <ul>
+      <% skills.forEach(function(s) { %>
+        <li>
+            <a href="/skills/<%=  s.id %>"><%=  s.learned %></a>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
