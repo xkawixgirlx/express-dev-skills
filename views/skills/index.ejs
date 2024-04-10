@@ -1,6 +1,6 @@
 <%- include('../partials/header.ejs') %>
+
 <body>
-    <h1>Skills Learned</h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
@@ -8,5 +8,6 @@
         </li>
       <% }); %>
     </ul>
-    <a href="/skills/new">Add Skill</a>
+    <a href="/skills/new">Add New Skill</a>
+
 <%- include('../partials/footer') %>
